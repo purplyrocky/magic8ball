@@ -1,3 +1,4 @@
+//create the array of 8ball images
 var img = [ 
 'http://planetoftheweb.com/i/8ball/19.png',                         
 'http://planetoftheweb.com/i/8ball/18.png',     
@@ -20,8 +21,9 @@ var img = [
 'http://planetoftheweb.com/i/8ball/1.png', 
 'http://planetoftheweb.com/i/8ball/0.png'
 ];
-
+//create button to run the function 'ask'
 var myBtn = document.querySelector('button');
+//this function will randomize the images and output one
 function ask(){
     document.body.style.backgroundImage = "url('')";
     var output = '<ul><li><img src="' + img[Math.floor(Math.random() * img.length)] + '"></li></ul>';
