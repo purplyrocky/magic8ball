@@ -1,0 +1,7 @@
+body {
+    background-image: url('http://planetoftheweb.com/i/8ball/empty.png');
+}
+ul li {
+    list-style: none;
+    display: inline-block;
+}
