@@ -1,5 +1,6 @@
 body {
     background-image: url('http://planetoftheweb.com/i/8ball/empty.png');
+    background-repeat: no-repeat;
 }
 ul li {
     list-style: none;
