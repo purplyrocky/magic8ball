@@ -7,20 +7,39 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<!--Custom CSS-->
 	<link rel="stylesheet" href="css/style.css">
+	<!--Angular JS-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 </head>
-<body>
+<body ng-app="myApp">
+<div ng-controller="MainController">
 	<div class="row">
-		<input type="text">
-		<button type="button">Ask</button>
-		<div id="content"></div>
+		<div class="col-sm-4"></div>
+ 		<div class="col-sm-4">
+			<h1 class="text-center">ASK IT ANYTHING</h1> <input type="text" ng-model="askQuestion" class="form-control">
+			<button ng-click="ask()" class="btn btn-default">Ask</button>
+		</div>
+		<div class="col-sm-4"></div>
 	</div>
+
+	<div class="row">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4">
+			<img ng-src="{{ tempLink || 'http://planetoftheweb.com/i/8ball/empty.png' }}" class="img-responsive center-block">
+		</div>
+		<div class="col-sm-4"></div>
+	</div>
+	
+
+</div>
 
 
 	<!--JQuery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<!--Bootstrap JS-->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<!--Custom JS-->
-	<script src="js/script.js"></script>
+	<!-- Modules -->
+	<script src="js/app.js"></script>
+	<!-- Controllers -->
+	<script src="js/controllers/MainController.js"></script>
 </body>
 </html>

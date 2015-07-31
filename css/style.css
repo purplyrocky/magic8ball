@@ -1,8 +1,6 @@
 body {
-    background-image: url('http://planetoftheweb.com/i/8ball/empty.png');
-    background-repeat: no-repeat;
+	background-color: #191919;
 }
-ul li {
-    list-style: none;
-    display: inline-block;
+h1 {
+	color: #fff;
 }
